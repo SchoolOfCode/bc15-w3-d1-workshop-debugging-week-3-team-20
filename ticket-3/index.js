@@ -1,15 +1,15 @@
 function countNumberOfNinesInNumber(number) {
   let count = 0;
-  // const numberString = number.toString();
+  number = number.toString();
   // const numberArray = numberString.split('');
 
-  for (let i = 0; i < numberArray.length; i++) {
-    const digit = numberArray[i];
-    if ("9" == digit) {
+  for (let i = 0; i < number.length; i++) {
+    const digit = number[i];
+    if ("9" === digit) {
       count++;
     }
   }
   return count;
 }
 
-countNumberOfNinesInNumber(99.999)
+console.log(countNumberOfNinesInNumber(99.99));
