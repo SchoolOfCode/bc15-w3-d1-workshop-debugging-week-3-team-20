@@ -8,7 +8,9 @@ function getGradeFromPoints(points) {
   } else if (points >= 40) {
     return "D";
   }
-  else return "E";
+  else {
+    return "E";
+  }
 }
 
 const grade = getGradeFromPoints(90);
